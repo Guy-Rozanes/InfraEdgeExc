@@ -1,0 +1,1 @@
+I had a lot of issues with my local windows file system so i can't change anymore the folder consoleApp1 to InfraEdge.UI (Which if you will open the project in visual studio you will see that this is the name (InfraEdge.UI)).
