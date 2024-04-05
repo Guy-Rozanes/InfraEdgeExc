@@ -1,0 +1,17 @@
+C:\Users\guyro\source\repos\InfraEdge\InfraEdge.API\obj\Debug\net8.0\InfraEdge.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\guyro\source\repos\InfraEdge\InfraEdge.API\obj\Debug\net8.0\InfraEdge.API.AssemblyInfoInputs.cache
+C:\Users\guyro\source\repos\InfraEdge\InfraEdge.API\obj\Debug\net8.0\InfraEdge.API.AssemblyInfo.cs
+C:\Users\guyro\source\repos\InfraEdge\InfraEdge.API\obj\Debug\net8.0\InfraEdge.API.csproj.CoreCompileInputs.cache
+C:\Users\guyro\source\repos\InfraEdge\InfraEdge.API\bin\Debug\net8.0\InfraEdge.API.exe
+C:\Users\guyro\source\repos\InfraEdge\InfraEdge.API\bin\Debug\net8.0\InfraEdge.API.deps.json
+C:\Users\guyro\source\repos\InfraEdge\InfraEdge.API\bin\Debug\net8.0\InfraEdge.API.runtimeconfig.json
+C:\Users\guyro\source\repos\InfraEdge\InfraEdge.API\bin\Debug\net8.0\InfraEdge.API.dll
+C:\Users\guyro\source\repos\InfraEdge\InfraEdge.API\bin\Debug\net8.0\InfraEdge.API.pdb
+C:\Users\guyro\source\repos\InfraEdge\InfraEdge.API\obj\Debug\net8.0\InfraEdge.API.dll
+C:\Users\guyro\source\repos\InfraEdge\InfraEdge.API\obj\Debug\net8.0\refint\InfraEdge.API.dll
+C:\Users\guyro\source\repos\InfraEdge\InfraEdge.API\obj\Debug\net8.0\InfraEdge.API.pdb
+C:\Users\guyro\source\repos\InfraEdge\InfraEdge.API\obj\Debug\net8.0\InfraEdge.API.genruntimeconfig.cache
+C:\Users\guyro\source\repos\InfraEdge\InfraEdge.API\obj\Debug\net8.0\ref\InfraEdge.API.dll
+C:\Users\guyro\source\repos\InfraEdge\InfraEdge.API\obj\Debug\net8.0\InfraEdge.API.csproj.AssemblyReference.cache
+C:\Users\guyro\source\repos\InfraEdge\InfraEdge.API\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\guyro\source\repos\InfraEdge\InfraEdge.API\obj\Debug\net8.0\InfraEdg.7E2C0A06.Up2Date
