@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,11 +16,21 @@ namespace InfraEdge.API.Common
             _httpClient = new HttpClient();
         }
 
-        public async Task<string> SendRequestAsync(CustomMethods method, string url, string body = null)
+        public async Task<string> SendRequestAsync(CustomMethods method, string url, string body = null, Dictionary<string, string> queryParams = null)
         {
             HttpMethod httpMethod = new HttpMethod(method.ToString());
+            var uriBuilder = new UriBuilder(url);
+            var query = System.Web.HttpUtility.ParseQueryString(uriBuilder.Query);
+            if (queryParams != null)
+            {
+                foreach (var param in queryParams)
+                {
+                    query[param.Key] = param.Value;
+                }
 
-            using (var request = new HttpRequestMessage(httpMethod, url))
+                uriBuilder.Query = query.ToString();
+            }
+            using (var request = new HttpRequestMessage(httpMethod, uriBuilder.ToString()))
             {
                 if (!string.IsNullOrEmpty(body))
                 {

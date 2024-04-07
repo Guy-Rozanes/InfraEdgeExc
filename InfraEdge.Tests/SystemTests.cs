@@ -10,24 +10,25 @@ namespace InfraEdge.Tests
     public class SystemTest
     {
         private WikiApiLogic wikiApiClient;
-        private IWebDriver webDriver;
+        private IWebDriver _webDriver;
+        private WikiPage _wikiPage;
 
         [SetUp]
         public void SetUp()
         {
             // pre-condition: create a wiki client and driver
             wikiApiClient = new WikiApiLogic();
-            webDriver = new ChromeDriver();
-
+            _webDriver = new ChromeDriver();
+            _wikiPage = new WikiPage(_webDriver);
         }
 
         [TearDown]
         public void TearDown()
         {
-            if (webDriver != null)
+            if (_webDriver != null)
             {
-                webDriver.Quit();
-                webDriver.Dispose();
+                _webDriver.Quit();
+                _webDriver.Dispose();
             }
         }
 
@@ -38,7 +39,7 @@ namespace InfraEdge.Tests
         public void DataVerfication()
         {
             var apiSpecialWords = wikiApiClient.GetAllSpecialWordsOccurrences().GetAwaiter().GetResult();
-            var uiSpecialWords = wikiApiClient.GetAllSpecialWordsOccurrences().GetAwaiter().GetResult();
+            var uiSpecialWords = _wikiPage.GetNumberOfOccurrencesEachWord();
             CollectionAssert.AreEquivalent(apiSpecialWords, uiSpecialWords);
         }
     }
